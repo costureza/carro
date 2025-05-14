@@ -1,0 +1,45 @@
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact h1{
+    font-family: var(--fonte-titulo);
+    font-size: 6rem;
+    color: var(--cor-letra-titulo);
+}
+.contact h1 span{
+    font-family: var(--fonte-titulo);
+    font-size: 6rem;
+    color: var(--botao);
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: var(--box-shadow);
+    background: var(--letra-leve);
+    border-radius: .5rem;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--letra-leve);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+.contact .row form .box:focus{
+    border-color: var(--cor-letra-titulo);
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row iframe{
+    width: 100%;
+    flex: 1 1 42rem;
+    padding: 2rem;
+}

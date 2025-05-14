@@ -1,0 +1,155 @@
+.home{
+    position: relative;
+    height: 100vh;
+}
+.home .list{
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.home .list .item{
+    position: absolute;
+    inset: 0;
+}
+.home .list .item .carro{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+}
+.home .list .item .carro img{
+    width: 100%;
+    transform: rotate(-30deg);
+}
+.home .list .item .content{
+    position: absolute;
+    right:100px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+.home .list .item .content .info{
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--botao);
+}
+.home .list .item .content h2{
+    font-size: 8em;
+    line-height: 1em;
+    color: var(--cor-letra-titulo);
+    font-family: var(--fonte-titulo);
+}
+.home .list .item .content .description{
+    font-size: 12px;
+    text-align: right;
+    color: var(--bg);
+    max-width:400px;
+}
+.home .list::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 50%;
+    border-top: var(--border);
+}
+.home .arrow {
+    width: 71vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-25px);    
+    display: flex;
+    justify-content: space-between;
+}
+.home .arrow button{
+    top: 60%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--cor-letra-titulo);
+}
+.home .arrow button img{
+    width: 6rem;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.home .arrow button:hover{
+    background: var(--letra-leve);
+}
+.home .indicators{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 12.5rem;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+}
+.home .indicators .number{
+    font-size: 5em;
+    font-family: var(--fonte-titulo);
+    color: var(--bg);
+}
+.home .indicators  ul{
+    display: flex;
+    gap: 10px;
+}
+.home .indicators  ul li{
+    width: 50px;
+    height: 5px;
+    background: var(--botao);
+    border-radius: .5rem;
+    transition: .5s;
+}
+.home .indicators ul li.active{
+    background: var(--letra-leve);
+}
+
+.home .list .item {
+    transform: translateX(calc(100vw * var(--calculation)));
+    transition: 0.5s;
+    opacity: 0;
+}
+.home .list .item .carro img{
+    transform: rotate(0);
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+.home .list .item .content .info, h2, .description, .btn{
+    transform: translateX(calc(200px * var(--calculation)));
+    transition: 0.7s;
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+.home .list .item .content h2{
+    transition-delay: 0.5s;
+}
+.home .list .item .content .description{
+    transition-delay: 0.7s;
+}
+.home .list .item .content .btn{
+    transition-delay: 0.9s;
+}
+.home .list .item.active{
+    transform: translateX(0);
+    transition: 0.5s;
+    opacity: 1;
+} 
+.home .list .item.active .carro img{
+    transform: rotate(-20deg);
+}
+.home .list .item.active .content .info, h2, .description, .btn {
+    transform: translateX(0);
+    opacity: 1;
+}
+

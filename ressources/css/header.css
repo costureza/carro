@@ -1,0 +1,30 @@
+.header{
+    position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    z-index: 2;
+    background: var(--cor-letra-titulo);
+}
+.header img{
+    width: 10rem;
+}
+.header .navbar a{
+    font-size: 3rem;
+    padding: 0 1.5rem;
+    color: var(--cor-letra);
+    font-family: var(--fonte-titulo);
+}
+.header .navbar a:hover{
+    color: var(--bg);
+}
+.header .menu-icon{
+    display: none;
+    color: var(--cor-letra);
+    font-size: 1.5rem;
+}

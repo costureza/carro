@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg:#37474F;
+    --cor-letra: #F5F5DC;
+    --cor-letra-titulo:#1976D2;
+    --botao:#B71C1C;
+    --letra-leve:#80CBC4;
+    --fonte-titulo:"Road Rage", sans-serif;
+    --fonte-geral:"Roboto Condensed", sans-serif;
+    --border:.1rem solid var(--botao);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --calculation: 1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    outline: none;
+    font-family: var(--fonte-geral);
+    transition: .2s linear;
+}
+section{
+    padding: 2rem 9%;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--cor-letra);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: 1rem;
+    background: var(--botao);
+    color: var(--cor-letra);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+.footer{
+    background: var(--cor-letra-titulo);
+    text-align: center;   
+    padding: 2rem 7%; 
+}
+.footer .credits{
+    font-size: 2rem;
+    color: var(--cor-letra);
+    padding: 1.5rem;
+}
+
+.footer .credits a{
+    color: var(--letra-leve);
+}
+.footer .credits a:hover{
+    color: var(--botao);
+}
+
